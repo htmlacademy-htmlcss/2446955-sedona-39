@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Татьяна Воронцова](https://up.htmlacademy.ru/htmlcss/39/user/2446955).
-* Наставник: [Ольга Ветер] (https://htmlacademy.ru/profile/id73199)
-* Сайт [Мой проект] (https://tatiana8972.github.io/2446955-sedona-39/)
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199)
+* Сайт [Мой проект](https://tatiana8972.github.io/2446955-sedona-39/)
 
 ---
 
