@@ -1,0 +1,262 @@
+@font-face {
+
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .navigation{
+    background-color: #FFFFFF;
+  }
+
+  .navigation-list{
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero {
+    background-color: #FFFFFF;
+    background-image: url("../img/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 1200px 485px;
+    background-position: center;
+    text-align: center;
+  }
+
+  .want-here{
+    width: 160px;
+    height: 36px;
+    border-radius: 4px;
+    padding: 8px 50px 8px 50px;
+    background-color: #756157;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .lead{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+
+  }
+
+  .advantages-describe{
+    height: 261px;
+  }
+
+  .sub-lead{
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .advantages{
+    width: 1200px;
+    height: 1155px;
+  }
+
+  .advantages-item-1{
+    width: 1200px;
+    height: 385px;
+    display: flex;
+  }
+
+  .first-advantage{
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    width: 400px;
+    height: 385px;
+  }
+
+  .advantages-image{
+    width: 800px;
+    height: 385px;
+  }
+
+  .three-advantages{
+    display: flex;
+    color: #000000;
+    width: 1200px;
+    height: 385px;
+  }
+
+  .advantages-item-2{
+    background-color:rgba(131, 179, 211, 0.12);
+    width: 400px;
+    height: 385px;
+    text-align: center;
+    color: #000000;
+    list-style: none;
+    margin: 0;
+  }
+
+  .advantages-item-3{
+    background-color: rgba(131, 179, 211, 0.2);
+    width: 400px;
+    height: 385px;
+    text-align: center;
+    color: #000000;
+    list-style: none;
+    margin: 0;
+  }
+
+  .advantages-item-4{
+    background-color:rgba(131, 179, 211, 0.12);
+    width: 400px;
+    height: 385px;
+    text-align: center;
+    color: #000000;
+    list-style: none;
+    margin: 0;
+  }
+
+  .advantages-item-5{
+    width: 1200px;
+    height: 385;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .fifth-advantage{
+    background-color: rgba(130, 179, 211, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    list-style: none;
+  }
+
+  .infrastructure{
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  .infrastructure-lead{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
+  .infrastructure-describe{
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .infrastructure-head{
+    height: 246px;
+  }
+
+  .infrastructure-list{
+    width: 1200px;
+    height: 385px;
+    display: flex;
+  }
+
+  .infrastructure-item-1{
+    width: 238px;
+    height: 215px;
+    background-color: rgba(131, 179, 211, 0.12);
+    color: #000000;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 81px 85px;
+  }
+
+  .infrastructure-item-2{
+    width: 238px;
+    height: 215px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 81px 85px;
+  }
+
+  .infrastructure-item-3{
+    width: 238px;
+    height: 215px;
+    background-color: rgba(131, 179, 211, 0.12);
+    color: #000000;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 81px 85px;
+  }
+
+  .search{
+    width: 1200px;
+    height: 406px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .search-link{
+    background-color: #756157;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 50px;
+    border-radius: 4px;
+  }
+
+  .subscribe{
+    background-image: url("../img/subscribe-background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+    color: #FFFFFF;
+    width: 1200px;
+    height: 415px;
+  }
+
+  .footer-phone{
+    color: #000000;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }

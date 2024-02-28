@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/catalog-style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -41,7 +42,7 @@
 
      <main class="main-catalog">
         <section class="filter">
-            <img class="filter-img" width="1200" height="412" src="img/filter-background.png" alt="Фоновое изображение блока">
+          <div class="main-filter"
             <h1 class="filter-title">Гостиницы Седоны</h1>
             <p class="hotels">Гостиницы</p>
             <fieldset class="catalog-filter-group">
@@ -95,13 +96,15 @@
               </li>
             </ul>
           </fieldset>
+          <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              </fieldset>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <button class="button" type="submit">Применить</button>
                 <button class="button" type="submit">Сбросить</button>
             </form>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
+            </div>
               <h2 class="found-hotels">Найдено гостиниц: 38</h2>
 
               <select class="select-control" aria-label="Сортировка">
@@ -115,8 +118,8 @@
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
                 <p class="product-card-description">Гостиница</p>
                 <b class="product-card-price">От 4000 ₽</b>
-                <a class="product-card-button button" href="#">Подробнее</a>
-                <a class="product-card-button button" href="#">В избранное</a>
+                <a class="product-card-button button-more" href="#">Подробнее</a>
+                <a class="product-card-button button-like" href="#">В избранное</a>
                 <p class="product-card-rate">Рейтинг: 8,5</p>
               </div>
 
@@ -125,8 +128,8 @@
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 <p class="product-card-description">Гостиница</p>
                 <b class="product-card-price">От 5000 ₽</b>
-                <a class="product-card-button button" href="#">Подробнее</a>
-                <a class="product-card-button button" href="#">В избранном</a>
+                <a class="product-card-button button-more" href="#">Подробнее</a>
+                <a class="product-card-button button-liked" href="#">В избранном</a>
                 <p class="product-card-rate">Рейтинг: 9,2</p>
               </div>
 
@@ -135,8 +138,8 @@
                 <h3 class="product-card-title">Desert Quail Inn</h3>
                 <p class="product-card-description">Гостиница</p>
                 <b class="product-card-price">От 2500 ₽</b>
-                <a class="product-card-button button" href="#">Подробнее</a>
-                <a class="product-card-button button" href="#">В избранное</a>
+                <a class="product-card-button button-more" href="#">Подробнее</a>
+                <a class="product-card-button button-like" href="#">В избранное</a>
                 <p class="product-card-rate">Рейтинг: 6,9</p>
               </div>
 
@@ -145,17 +148,12 @@
                 <h3 class="product-card-title">GreenTree Inn</h3>
                 <p class="product-card-description">Гостиница</p>
                 <b class="product-card-price">От 1500 ₽</b>
-                <a class="product-card-button button" href="#">Подробнее</a>
-                <a class="product-card-button button" href="#">В избранное</a>
+                <a class="product-card-button button-more" href="#">Подробнее</a>
+                <a class="product-card-button button-like" href="#">В избранное</a>
                 <p class="product-card-rate">Рейтинг: 5,0</p>
               </div>
         </section>
 
-        <section class="search">
-          <h2 class="search-title">Заинтересовались?</h2>
-          <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a class="search-link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
-          </section>
           <section class="subscribe">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>

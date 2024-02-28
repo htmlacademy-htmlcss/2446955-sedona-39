@@ -1,0 +1,107 @@
+@font-face {
+
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .navigation{
+    background-color: #FFFFFF;
+  }
+
+  .navigation-list{
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .main-filter{
+    background-image: url("../img/filter-background.png");
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px 412px;
+    width: 1200px;
+    height: 412px;
+    color: #FFFFFF;
+
+  }
+
+  .product-cards{
+    border: 1px solid #E6E6E6;
+    width: 340px;
+    height: 438px;
+    text-align: left;
+  }
+
+  .button-more{
+    background-color: #756157;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 140px;
+    height: 36px;
+    font-weight: 400;
+  }
+  .button-like{
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 140px;
+    height: 36px;
+    font-weight: 400;
+  }
+
+  .button-liked{
+    background-color: #7DB54F;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 140px;
+    height: 36px;
+    font-weight: 400;
+  }
+
+  .product-card-rate{
+    background-color: #F2F2F2;
+    color: #000000;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 140px;
+    height: 36px;
+    font-weight: 400;
+  }
+
+.subscribe{
+    text-align: center;
+    color: black;
+    width: 1200px;
+    height: 415px;
+}
+
+.footer-phone{
+    color: #000000;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }
