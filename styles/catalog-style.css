@@ -23,6 +23,10 @@
 
   .navigation{
     background-color: #FFFFFF;
+    height: 64px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .navigation-list{
@@ -30,6 +34,37 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 339px;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .navigation-user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    text-align: right;
+    width: 268px;
+    list-style: none;
+  }
+
+  .navigation-user-link-want{
+    width: 160px;
+    height: 36px;
+  }
+
+  .want-here{
+    border-radius: 4px;
+    padding: 8px 50px 8px 50px;
+    background-color: #756157;
+    color: #FFFFFF;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
   }
 
   .main-filter{
@@ -41,6 +76,7 @@
     width: 1200px;
     height: 412px;
     color: #FFFFFF;
+    list-style: none;
 
   }
 
@@ -97,7 +133,24 @@
     height: 415px;
 }
 
-.footer-phone{
+.page-footer{
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+}
+
+.footer-social-list{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  width: 142px;
+}
+
+  .footer-phone{
     color: #000000;
     font-size: 40px;
     font-weight: 400;

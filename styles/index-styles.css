@@ -24,6 +24,10 @@
 
   .navigation{
     background-color: #FFFFFF;
+    height: 64px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .navigation-list{
@@ -31,6 +35,25 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 339px;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .navigation-user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    text-align: right;
+    width: 268px;
+    list-style: none;
+  }
+
+  .navigation-user-link-want{
+    width: 160px;
+    height: 36px;
   }
 
   .hero {
@@ -43,12 +66,11 @@
   }
 
   .want-here{
-    width: 160px;
-    height: 36px;
     border-radius: 4px;
     padding: 8px 50px 8px 50px;
     background-color: #756157;
     color: #FFFFFF;
+    font-family: "PT Sans";
     font-size: 16px;
     font-weight: 700;
     text-align: center;
@@ -91,17 +113,6 @@
   align-content: flex-start;
 }
 
-.first-advantage{
-  width: 400px;
-  background-color: #82B3D3;
-  color: #FFFFFF;
-  margin: 0;
-  padding: 0;
-  height: 385px;
-  text-align: center;
-  order: -2
-}
-
 .advantages-image{
   width: 800px;
   height: 385px;
@@ -109,8 +120,14 @@
   padding: 0;
 }
 
-.advantages-image-1{
-  order: -1;
+.advantages-item-1{
+  width: 1200px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 385px;
 }
 
 .advantages-item-2{
@@ -121,7 +138,6 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  order: 0;
 }
 
 .advantages-item-3{
@@ -132,7 +148,6 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  order: 1;
 }
 
 .advantages-item-4{
@@ -143,22 +158,20 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  order: 2;
 }
 
-.advantages-image-2{
-  order: 3;
-}
-
-.fifth-advantage{
-  width: 400px;
+.advantages-item-5{
+  width: 1200px;
   background-color: #82B3D3;
   color: #FFFFFF;
+  display: flex;
   margin: 0;
   padding: 0;
   height: 385px;
+}
+
+.advantages-title{
   text-align: center;
-  order: 4;
 }
 
   .infrastructure{
@@ -256,6 +269,23 @@
     width: 1200px;
     height: 415px;
   }
+
+.page-footer{
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+}
+
+.footer-social-list{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  width: 142px;
+}
 
   .footer-phone{
     color: #000000;
