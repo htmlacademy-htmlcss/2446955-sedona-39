@@ -33,6 +33,10 @@
     max-width: 1200px;
   }
 
+  .header, .main, .footer{
+    width: 100%;
+  }
+
   .page-header-logo{
     padding: 0;
     margin: 0;
@@ -42,7 +46,6 @@
 
   .navigation{
     background-color: #FFFFFF;
-    height: 64px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -70,7 +73,6 @@
     line-height: 24px;
     text-decoration: none;
     text-align: center;
-
   }
 
   .navigation-user{
@@ -134,10 +136,6 @@
     margin-bottom: 25px;
   }
 
-  .advantages-describe{
-    height: 261px;
-  }
-
   .sub-lead{
     text-align: center;
     color: #000000;
@@ -181,7 +179,7 @@
   display: flex;
   margin: 0;
   padding: 0;
-  height: 385px;
+
 }
 
 .advantages-item-2{
@@ -391,23 +389,18 @@ input{
 }
 
 .footer-social-list{
-  display: flex;
+  display: grid;
   list-style: none;
+  grid-template-columns: 47px 47px 47px;
   margin: 0;
   padding: 0;
-  width: 142px;
+  height: 40px;
 }
 
-.social-vk{
-  padding: 13px 12px;
-}
-
-.social-tg{
-  padding: 12px 15px;
-}
-
-.social-yt{
-  padding: 12px 13px;
+.footer-social-link{
+  display: block;
+  width: 47px;
+  height: 40px;
 }
 
   .footer-phone{
