@@ -93,21 +93,17 @@
   }
 
   .navigation-user-link-want{
-    width: 160px;
-    height: 36px;
-  }
-
-  .want-here{
     border-radius: 4px;
-    padding: 8px 50px 8px 50px;
+    padding: 8px 30px;
     background-color: #756157;
     color: #FFFFFF;
     font-family: "PT Sans";
     font-size: 16px;
     font-weight: 700;
+    line-height: 20px;
     text-align: center;
     text-decoration: none;
-    margin: 0 14px;
+    margin: 0;
   }
 
   .filter-title{
@@ -156,7 +152,6 @@
   }
 
   .catalog-filter-group{
-
     padding: 0;
     margin: 0;
   }
@@ -184,7 +179,6 @@
   }
 
   .button-1{
-
     margin-top: 56px;
     margin-bottom: 32px;
     background-color: rgba(130, 179, 211, 1);
@@ -204,12 +198,10 @@
     height: 412px;
     color: #FFFFFF;
     list-style: none;
-
   }
 
   .choose-type{
     display: flex;
-
   }
 
   .found-hotels{
@@ -256,6 +248,7 @@
     grid-column: 1/-1;
     margin: 0;
     padding: 0;
+    min-height: 28px;
   }
 
   .product-card-description, .stars, .product-card-rate, .product-card-button{
@@ -321,24 +314,27 @@
     list-style: none;
   }
 
+ .page-item{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    background-color: rgba(130, 179, 211, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .page-active{
     background-color: rgba(242, 242, 242, 1);
     color: rgba(0, 0, 0, 1);
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
-    width: 60px;
-    height: 60px;
-    border-radius: 4px;
-    text-align: center;
-  }
-
-  .page-item{
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 36px;
-    background-color: rgba(130, 179, 211, 1);
-    color: rgba(255, 255, 255, 1);
     width: 60px;
     height: 60px;
     border-radius: 4px;
@@ -357,6 +353,39 @@
     color: black;
     width: 1200px;
     height: 415px;
+}
+
+.subscribe-block{
+  padding: 96px 20px 54px 20px;
+}
+
+.subscribe-title{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.subscribe-form{
+  display: flex;
+  height: 52px;
+  justify-content: center;
+}
+
+.subscribe-button{
+background-color: rgba(130, 179, 211, 1);
+color: rgba(255, 255, 255, 1);
+padding: 8px 50px;
+font-size: 20px;
+font-weight: 700;
+line-height: 36px;
+}
+
+input{
+  width: 452px;
+  min-height: 50px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 .page-footer{
@@ -381,4 +410,12 @@
     line-height: 40px;
     text-align: center;
     text-decoration: none;
+  }
+
+  .social-tg{
+    padding: 12px 14px;
+  }
+
+  .social-yt{
+    padding: 11px 12px;
   }

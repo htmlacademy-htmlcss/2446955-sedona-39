@@ -95,35 +95,40 @@
   }
 
   .navigation-user-link-want{
-    width: 160px;
-    height: 36px;
+    border-radius: 4px;
+    padding: 8px 30px;
+    background-color: #756157;
+    color: #FFFFFF;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
   }
 
   .hero {
     background-color: #FFFFFF;
     background-image: url("../img/index-background.jpg");
     background-repeat: no-repeat;
-    background-size: 1200px 485px;
+    background-size: 1200px 460px;
     background-position: center;
     text-align: center;
+  }
+
+  .divider{
+    padding: 0;
+    margin: 0;
   }
 
   .hero-img{
     padding-top: 51px;
   }
 
-  .want-here{
-    border-radius: 4px;
-    padding: 8px 50px 8px 50px;
-    background-color: #756157;
-    color: #FFFFFF;
-    font-family: "PT Sans";
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    margin: 0 14px;
-  }
+.about{
+  padding: 69px 20px;
+}
 
   .lead{
     font-size: 30px;
@@ -132,8 +137,6 @@
     text-align: center;
     color: #000000;
     background-color: #FFFFFF;
-    margin-top: 69px;
-    margin-bottom: 25px;
   }
 
   .sub-lead{
@@ -143,7 +146,6 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
-    margin-bottom: 90px;
   }
 
 .advantages-list{
@@ -180,6 +182,11 @@
   margin: 0;
   padding: 0;
 
+}
+
+.first-advantage, .last-advantage{
+  display: block;
+  text-align: center;
 }
 
 .advantages-item-2{
@@ -237,7 +244,7 @@
     background-color: #FFFFFF;
     margin: 0;
     padding: 0;
-    margin-top: 64px;
+    margin-bottom: 20px;
   }
 
   .infrastructure-describe{
@@ -249,12 +256,10 @@
     line-height: 26px;
     margin: 0;
     padding: 0;
-    margin-top: 20px;
-    margin-bottom: 64px;
   }
 
-  .infrastructure-head{
-    height: 246px;
+  .infrastructure-about{
+    padding: 64px 20px;
   }
 
   .infrastructure-list{
@@ -270,7 +275,7 @@
     padding: 0;
   }
 
-  .infrastructure-item-1{
+ .infrastructure-item-1{
     width: 238px;
     background-color: rgba(131, 179, 211, 0.12);
     color: #000000;
@@ -308,17 +313,19 @@
     text-align: center;
   }
 
+  .interesting{
+    padding: 96px 20px 54px 20px;
+  }
+
   .search-title{
     margin: 0;
     padding: 0;
-    padding-top: 96px;
     padding-bottom: 20px;
   }
 
   .search-description{
     margin: 0;
     padding: 0;
-    padding-bottom: 54px;
   }
 
   .search-link{
@@ -346,20 +353,19 @@
     padding: 0;
   }
 
+  .subscribe-block{
+    padding: 96px 20px 54px 20px;
+  }
+
   .subscribe-title{
     margin: 0;
     padding: 0;
-    padding-top: 96px;
     padding-bottom: 20px;
-  }
-
-  .subscribe-description{
-    padding-bottom: 54px;
   }
 
   .subscribe-form{
     display: flex;
-    height: 52px;
+    min-height: 52px;
     justify-content: center;
     border: 0;
   }
@@ -375,7 +381,7 @@
 
 input{
   width: 452px;
-  height: 52px;
+  min-height: 50px;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -384,7 +390,6 @@ input{
 .page-footer{
   display: flex;
   justify-content: space-between;
-  height: 120px;
   align-items: center;
 }
 
@@ -410,4 +415,14 @@ input{
     line-height: 40px;
     text-align: center;
     text-decoration: none;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .social-tg{
+    padding: 12px 14px;
+  }
+
+  .social-yt{
+    padding: 11px 12px;
   }
