@@ -325,39 +325,90 @@
     margin: 0;
   }
 
-  .infrastructure-image{
+ .infrastructure-item-1{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    background-color: rgba(131, 179, 211, 0.12);
+    color: #000000;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 55px 85px;
+  }
+
+  .infrastructure-title-1::before{
+    content: "";
+    display: block;
+    position: relative;
+    background-image: url(../img/advantages-house.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 75px;
+    width: 75px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    left: 34%;
+  }
+
+  .infrastructure-description{
     margin: 0;
     padding: 0;
   }
 
- .infrastructure-item-1{
-    width: 238px;
-    background-color: rgba(131, 179, 211, 0.12);
+  .infrastructure-item-2{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    background-color: transparent;
     color: #000000;
     text-align: center;
     list-style: none;
     margin: 0;
-    padding: 81px 85px;
+    padding: 55px 85px;
   }
 
-  .infrastructure-item-2{
-    width: 238px;
-    background-color: #FFFFFF;
-    color: #000000;
-    text-align: center;
-    list-style: none;
+  .infrastructure-title-2::before{
+    content: "";
+    display: block;
+    position: relative;
+    background-image: url(../img/advantages-food.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 75px;
+    width: 75px;
     margin: 0;
-    padding: 81px 85px;
+    padding: 0;
+    margin-bottom: 30px;
+    left: 34%;
   }
 
   .infrastructure-item-3{
-    width: 238px;
+    display: flex;
+    flex-direction: column;
+    width: 230px;
     background-color: rgba(131, 179, 211, 0.12);
     color: #000000;
     text-align: center;
     list-style: none;
     margin: 0;
-    padding: 81px 85px;
+    padding: 55px 85px;
+  }
+
+  .infrastructure-title-3::before{
+    content: "";
+    display: block;
+    position: relative;
+    background-image: url(../img/advantages-gift.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 75px;
+    width: 75px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    left: 34%;
   }
 
   .hotels{
