@@ -10,7 +10,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="#">
-          <img class="page-header-logo" width="138" height="64" src="img/logo.svg" alt="логотип сайта">
+          <img class="page-header-logo" width="140" height="70" src="img/logo.svg" alt="логотип сайта">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -119,8 +119,32 @@
           </ul>
         </fieldset>
 
-        <fieldset class="catalog-filter-group catalog-filter-price">
+        <fieldset class="catalog-filter-price">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <div class="range">
+            <div class="range-wrapper-inputs">
+                <label class="filter-min">
+                  <input class="range-input range-min" type="number" value="0" name="min-price">
+                  <span>от</span>
+                </label>
+                <label class="filter-max">
+                  <input class="range-input range-max" type="number" value="9000" name="max-price" style="width: 37px">
+                  <span>до</span>
+                </label>
+              </div>
+
+
+              <div class="range-scale">
+                <div class="range-bar" style="width: 226">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
+              </div>
+            </div>
             </fieldset>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <button class="button button-1" type="submit">ПРИМЕНИТЬ</button>
@@ -150,7 +174,7 @@
               <p class="product-card-description">Гостиница</p>
               <b class="product-card-price">От 4000 ₽</b>
               <a class="product-card-button button-more" href="#">ПОДРОБНЕЕ</a>
-              <a class="product-card-button button-like" href="#">В ИЗБРАННОЕ</a>
+              <button type="button" class="product-card-button button-like" href="#">В ИЗБРАННОЕ</button>
               <p class="stars">Оценка</p>
               <p class="product-card-rate">РЕЙТИНГ: 8,5</p>
             </div>
@@ -161,7 +185,7 @@
               <p class="product-card-description">Гостиница</p>
               <b class="product-card-price">От 5000 ₽</b>
               <a class="product-card-button button-more" href="#">ПОДРОБНЕЕ</a>
-              <a class="product-card-button button-like" href="#">В ИЗБРАННОЕ</a>
+              <button type="button" class="product-card-button button-liked" href="#">В ИЗБРАННОМ</button>
               <p class="stars">Оценка</p>
               <p class="product-card-rate">РЕЙТИНГ: 9,2</p>
             </div>
@@ -172,7 +196,7 @@
               <p class="product-card-description">Гостиница</p>
               <b class="product-card-price">От 2500 ₽</b>
               <a class="product-card-button button-more" href="#">ПОДРОБНЕЕ</a>
-              <a class="product-card-button button-like" href="#">В ИЗБРАННОЕ</a>
+              <button type="button" class="product-card-button button-like" href="#">В ИЗБРАННОЕ</button>
               <p class="stars">Оценка</p>
               <p class="product-card-rate">РЕЙТИНГ: 6,9</p>
             </div>
@@ -183,7 +207,7 @@
               <p class="product-card-description">Гостиница</p>
               <b class="product-card-price">От 1500 ₽</b>
               <a class="product-card-button button-more" href="#">ПОДРОБНЕЕ</a>
-              <a class="product-card-button button-like" href="#">В ИЗБРАННОЕ</a>
+              <button type="button" class="product-card-button button-like" href="#">В ИЗБРАННОЕ</button>
               <p class="stars">Оценка</p>
               <p class="product-card-rate">РЕЙТИНГ: 5,0</p>
             </div>
