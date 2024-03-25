@@ -827,8 +827,8 @@ input:checked + .control-mark-radio::before{
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
   position: absolute;
-  right: 15px;
-  top: 10px;
+  right: 19px;
+  top: 14px;
 }
 
 .filter-min span{
@@ -837,8 +837,8 @@ input:checked + .control-mark-radio::before{
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
   position: absolute;
-  right: 15px;
-  top: 10px;
+  right: 19px;
+  top: 14px;
 }
 
 .filter-min:hover{
@@ -854,6 +854,9 @@ input:checked + .control-mark-radio::before{
   background-color: rgba(242, 242, 242, 1);
   color: #000000;
   width: 143px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .range-max{
@@ -861,6 +864,9 @@ input:checked + .control-mark-radio::before{
   background-color: rgba(242, 242, 242, 1);
   color: #000000;
   width: 143px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -875,9 +881,8 @@ input:checked + .control-mark-radio::before{
     align-items: center;
     width: 1060px;
     min-height: 49px;
-    padding: 50px 70px 40px 70px;
+    padding: 50px 0 40px 70px;
     margin: 0;
-    margin-left: auto;
   }
 
   .found-hotels{
@@ -898,6 +903,10 @@ input:checked + .control-mark-radio::before{
   .select-control{
     width: 292px;
     height: 49px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: "PT Sans";
     padding: 14px 20px;
     margin-right: 70px;
     border: solid 2px rgba(229, 229, 229, 1);
@@ -943,9 +952,12 @@ input:checked + .control-mark-radio::before{
   border: solid 2px rgba(229, 229, 229, 1);
   border-radius: 4px;
   list-style: none;
-  margin-right: 8px;
   width: 45px;
   height: 45px;
+}
+
+.choose-icon:nth-last-child(2), .choose-icon:nth-last-child(3){
+  margin-right: 8px;
 }
 
 .choose-icon-active{
@@ -1026,12 +1038,12 @@ input:checked + .control-mark-radio::before{
     font-weight: 700;
   }
 
-  .product-card-description, .stars, .product-card-rate, .product-card-button{
+  .product-card-description, .product-card-rate, .product-card-button{
     margin: 0;
     padding: 0;
   }
 
-  .stars, .product-card-rate, .product-card-button{
+  .product-card-rate, .product-card-button{
     text-align: center;
     display: flex;
     justify-content: center;
@@ -1045,6 +1057,11 @@ input:checked + .control-mark-radio::before{
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
+  }
+
+  .stars{
+    align-items: center;
+    padding-top: 10px;
   }
 
   .product-card-button{
@@ -1606,7 +1623,8 @@ input{
   border: 0;
   font-family: "PT Sans";
   font-size: 18px;
-  line-height: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
   text-align: center;
   font-weight: 700;
   width: 110px;
@@ -1626,7 +1644,7 @@ input{
   border: 0;
   background-color: transparent;
   position: absolute;
-  left: 8px;
+  left: 7px;
   top: 12px;
   justify-content: center;
   align-items: center;
@@ -1638,7 +1656,7 @@ input{
   position: absolute;
   justify-content: center;
   align-items: center;
-  left: 75px;
+  left: 78px;
   top: 16px;
 }
 
