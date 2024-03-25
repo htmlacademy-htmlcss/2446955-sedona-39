@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    padding: 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
   }
 
@@ -49,7 +50,7 @@
 
   .page-header{
     width: 100%;
-    padding: 0 70px;
+    padding: 0 60px 0 70px;
     box-sizing: border-box;
   }
 
@@ -115,14 +116,14 @@
   .navigation-link-current{
     text-decoration: underline solid rgba(117, 98, 87, 1);
     text-decoration-thickness: 2px;
-    text-underline-offset: 22px;
+    text-underline-offset: 23px;
   }
 
   .navigation-user{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    text-align: right;
+    justify-content: center;
+    text-align: center;
     list-style: none;
     text-decoration: none;
     margin: 0;
@@ -135,7 +136,7 @@
     display: block;
     min-width: 20px;
     min-height: 20px;
-    padding: 20px 12px;
+    padding: 20px 13px;
   }
 
   .notification-badge{
@@ -192,7 +193,7 @@
 
   .navigation-user-link-want{
     border-radius: 4px;
-    padding: 8px 30px;
+    padding: 8px 34px;
     background-color: #756157;
     color: #FFFFFF;
     font-family: "PT Sans";
@@ -202,6 +203,7 @@
     text-align: center;
     text-decoration: none;
     margin: 0;
+    box-sizing: border-box;
   }
 
   .navigation-user-link-want:hover{
@@ -233,7 +235,8 @@
   }
 
 .about{
-  padding: 69px 20px;
+  padding: 38px 20px;
+  margin-bottom: 30px;
 }
 
   .lead{
@@ -243,6 +246,8 @@
     text-align: center;
     color: #000000;
     background-color: #FFFFFF;
+    padding-bottom: 0;
+    margin-bottom: 25px;
   }
 
   .sub-lead{
@@ -252,6 +257,8 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
+    padding-top: 0;
+    margin-top: 0;
   }
 
 .advantages-list{
@@ -269,11 +276,19 @@
 }
 
 .advantages-title{
-  padding-top: 102px;
+  padding: 0;
   text-align: center;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.advantages-title-1{
+  padding-top: 80px;
+}
+
+.advantages-title-2{
+  padding-top: 90px;
 }
 
 .advantages-title-1::after{
@@ -317,13 +332,15 @@
   display: flex;
   margin: 0;
   padding: 0;
-
 }
 
 .first-advantage, .last-advantage{
   display: block;
   text-align: center;
   width: 400px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .advantages-item-2{
@@ -423,6 +440,13 @@
     padding: 55px 85px;
   }
 
+  .infrastructure-title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    padding-bottom: 5px;
+  }
+
   .infrastructure-title-1::before{
     content: "";
     display: block;
@@ -509,17 +533,12 @@
     padding: 0;
   }
 
-  .catalog-filter{
-    grid-column: 4/5;
-  }
-
 .control-input{
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(63, 94, 114, 1);
-  position: relative;
 }
 
 .control:hover{
@@ -534,9 +553,16 @@ input:checked + .control-mark-checkbox::before{
   background-image: url(../img/checked.svg);
 }
 
+.control-mark{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .control-mark-checkbox::before{
   content: "";
-  position: absolute;
   width: 20px;
   min-height: 19px;
   border: 0;
@@ -545,6 +571,24 @@ input:checked + .control-mark-checkbox::before{
   background-repeat: no-repeat;
   background-position: center;
   display: block;
+  margin-right: 16px;
+}
+
+input:checked + .control-mark-radio::before{
+  background-image: url(../img/radio.svg);
+}
+
+.control-mark-radio::before{
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  width: 20px;
+  min-height: 20px;
+  display: block;
+  margin-right: 16px;
 }
 
   .button{
@@ -609,7 +653,7 @@ input:checked + .control-mark-checkbox::before{
     min-height: 307px;
     color: #FFFFFF;
     list-style: none;
-    padding: 35px 70px 70px 70px;
+    padding: 35px 60px 70px 70px;
   }
 
   .filter-title{
@@ -660,8 +704,8 @@ input:checked + .control-mark-checkbox::before{
 }
 
 .catalog-filter-type{
-  margin-right: 140px;
-  width: 150px;
+  margin-right: 150px;
+  width: 160px;
 }
 
 .catalog-filter-title{
@@ -691,6 +735,14 @@ input:checked + .control-mark-checkbox::before{
     min-height: 160px;
     border: 0;
     box-sizing: border-box;
+  }
+
+  .catalog-filter{
+    margin: 0;
+  }
+
+  .filter{
+    padding-bottom: 20px;
   }
 
 .range{
@@ -749,7 +801,7 @@ input:checked + .control-mark-checkbox::before{
   gap: 2px;
   padding: 0;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 45px;
 }
 
 .catalog-filter-label {
@@ -823,10 +875,9 @@ input:checked + .control-mark-checkbox::before{
     align-items: center;
     width: 1060px;
     min-height: 49px;
-    padding: 0;
+    padding: 50px 70px 40px 70px;
     margin: 0;
-    padding-top: 50px;
-    padding-left: 70px;
+    margin-left: auto;
   }
 
   .found-hotels{
@@ -893,6 +944,8 @@ input:checked + .control-mark-checkbox::before{
   border-radius: 4px;
   list-style: none;
   margin-right: 8px;
+  width: 45px;
+  height: 45px;
 }
 
 .choose-icon-active{
@@ -909,7 +962,7 @@ input:checked + .control-mark-checkbox::before{
   width: 16px;
   height: 14px;
   border: none;
-  padding: 17px 16px;
+  padding: 22px 21px;
   cursor: pointer;
 }
 
@@ -921,7 +974,7 @@ input:checked + .control-mark-checkbox::before{
   width: 16px;
   height: 14px;
   border: none;
-  padding: 17px 16px;
+  padding: 22px 21px;
   cursor: pointer;
 }
 
@@ -933,15 +986,18 @@ input:checked + .control-mark-checkbox::before{
   width: 16px;
   height: 14px;
   border: none;
-  padding: 17px 16px;
+  padding: 22px 21px;
   cursor: pointer;
 }
 
   .product-cards{
+    width: 1060px;
     display: grid;
     grid-template-columns: 340px 340px 340px;
     gap: 20px;
-    padding: 70px;
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+    padding-bottom: 40px;
+    margin: 0 auto;
   }
 
   .product-card{
@@ -965,6 +1021,9 @@ input:checked + .control-mark-checkbox::before{
     grid-column: 1/-1;
     margin: 0;
     padding: 0;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
   }
 
   .product-card-description, .stars, .product-card-rate, .product-card-button{
@@ -980,6 +1039,12 @@ input:checked + .control-mark-checkbox::before{
     padding: 0;
     margin: 0;
     border: 0;
+  }
+
+  .product-card-rate{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
   }
 
   .product-card-button{
@@ -1082,6 +1147,7 @@ input:checked + .control-mark-checkbox::before{
     display: flex;
     gap: 8px;
     list-style: none;
+    padding-left: 70px;
   }
 
  .page-item{
@@ -1163,7 +1229,7 @@ input:checked + .control-mark-checkbox::before{
   }
 
   .interesting{
-    padding: 96px 20px 54px 20px;
+    padding: 96px 20px 62px 20px;
   }
 
   .search-title{
@@ -1191,7 +1257,7 @@ input:checked + .control-mark-checkbox::before{
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-    padding: 8px 50px;
+    padding: 13px 50px;
     border-radius: 4px;
     margin-bottom: 96px;
   }
@@ -1224,8 +1290,8 @@ input:checked + .control-mark-checkbox::before{
   .subscribe-index{
     background-image: url("../img/subscribe-background.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+    background-size: 100% auto;
+    background-color: rgba(130, 179, 211, 1);
     text-align: center;
     color: #FFFFFF;
     width: 1200px;
@@ -1235,16 +1301,17 @@ input:checked + .control-mark-checkbox::before{
   }
 
   .subscribe-block{
-    padding: 96px 20px 54px 20px;
+    padding: 96px 20px 32px 20px;
   }
 
   .subscribe-title{
     margin: 0;
     padding: 0;
-    padding-bottom: 20px;
+    font-family: "PT Sans";
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    padding-bottom: 20px;
   }
 
   .subscribe-description{
@@ -1257,6 +1324,10 @@ input:checked + .control-mark-checkbox::before{
     display: flex;
     min-height: 52px;
     justify-content: center;
+    font-family: "PT Sans";
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
 
   .subscribe-mail{
@@ -1273,12 +1344,14 @@ input:checked + .control-mark-checkbox::before{
     border-radius: 4px 0 0 4px;
     min-height: 52px;
     margin-bottom: 104px;
+    box-sizing: border-box;
   }
 
 .subscribe-button{
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
   padding: 0;
+  font-family: "PT Sans";
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -1305,6 +1378,11 @@ input:checked + .control-mark-checkbox::before{
   color: rgba(255, 255, 255, 0.3);
 }
 
+.subscribe-description-catalog{
+  padding: 0;
+  margin: 0;
+}
+
 input{
   padding: 0;
   margin: 0;
@@ -1326,6 +1404,7 @@ input{
   margin: 0;
   padding: 0;
   height: 40px;
+  padding-top: 10px;
 }
 
 .footer-social-link{
@@ -1380,6 +1459,7 @@ input{
 
   .footer-link{
     color:rgba(0, 0, 0, 1);
+    padding-top: 14px;
   }
 
   .footer-link:hover{
@@ -1419,6 +1499,7 @@ input{
 
   .modal-auth{
     width: 717px;
+    box-sizing: border-box;
   }
 
   .modal-title{
@@ -1469,6 +1550,7 @@ input{
   min-height: 48px;
   box-sizing: border-box;
   padding: 12px 20px;
+  color: rgba(0, 0, 0, 1);
 }
 
 .field-group{
@@ -1506,13 +1588,17 @@ input{
   border: 0;
   border-radius: 10px;
   width: 577px;
+  min-height: 60px;
+  padding: 18px 256px;
+  box-sizing: border-box;
 }
 
 .adults{
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 137px 110px;
   align-items: center;
   width: 247px;
+  margin-bottom: 48px;
 }
 
 .adults-input, .children-input{
@@ -1540,8 +1626,8 @@ input{
   border: 0;
   background-color: transparent;
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 8px;
+  top: 12px;
   justify-content: center;
   align-items: center;
 }
@@ -1553,14 +1639,17 @@ input{
   justify-content: center;
   align-items: center;
   left: 75px;
-  top: 14px;
+  top: 16px;
 }
 
 .children{
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 131px 110px;
   width: 242px;
   align-items: center;
+  justify-content: flex-end;
+  margin-left: 82px;
+  position: relative;
 }
 
 .field-children{
@@ -1569,12 +1658,18 @@ input{
   line-height: 24px;
 }
 
+.children-button{
+  position: relative;
+}
+
 .button-minus{
   border: 0;
   background-color: transparent;
   position: absolute;
   justify-content: center;
   align-items: center;
+  top: 12px;
+  left: 8px;
 }
 
 .button-plus{
@@ -1583,6 +1678,8 @@ input{
   position: absolute;
   justify-content: center;
   align-items: center;
+  top: 16px;
+  right: 8px;
 }
 
 .warning{
@@ -1596,6 +1693,9 @@ input{
   border-radius: 50%;
   width: 26px;
   min-height: 26px;
+  position: absolute;
+  top: -12px;
+  left: 60px;
 }
 
 .warning-text{
@@ -1605,11 +1705,27 @@ input{
   line-height: 20px;
   font-weight: 400;
   padding: 15px 18px;
-  display: block;
+  display: none;
   border-radius: 10px;
   width: 256px;
   box-sizing: border-box;
   position: absolute;
+  top: 30px;
+  left: -50px;
+}
+
+.warning-text::before{
+  content: "";
+  background-image: url(../img/arrow.svg);
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  top: -9px;
+  left: 114px;
+}
+
+.warning:hover + .warning-text, .warning:focus + .warning-text{
+  display: block;
 }
 
 .tooltip{
