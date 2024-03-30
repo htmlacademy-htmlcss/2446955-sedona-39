@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="/favicon.png">
   </head>
 
   <body>
     <div class="full-page">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a class="navigation-logo" href="#">
+          <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" width="140" height="70" src="img/logo.svg" alt="логотип сайта">
           </a>
           <ul class="navigation-list">
@@ -82,7 +82,7 @@
                 </li>
               </ul>
 
-              <form class="catalog-filter-form"  data-test="filter" method="get">
+              <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" data-test="filter" method="get">
                 <fieldset class="catalog-filter-group catalog-filter-infrastracture">
                   <legend class=" catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
@@ -173,135 +173,94 @@
           </div>
         </form>
 
-        <div class="result">
           <div class="choose-type">
             <h2 class="found-hotels">НАЙДЕНО ГОСТИНИЦ: 38</h2>
 
             <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвые</option>
-              <option value="popular">Сначала популярные</option>
-              <option value="expensive">Сначала дорогие</option>
+              <option class="select-control-item" value="cheap">Сначала дешёвые</option>
+              <option class="select-control-item" value="popular">Сначала популярные</option>
+              <option class="select-control-item" value="expensive">Сначала дорогие</option>
             </select>
             <ul class="choose-icons">
-              <li class="choose-icon choose-icon-active"><button type="button" class="button-tile"></button></li>
-              <li class="choose-icon"><button type="button" class="button-big-list"></button></li>
-              <li class="choose-icon"><button type="button" class="button-small-list"></button></li>
+              <li class="choose-icon choose-icon-active"><button type="button" class="button-tile"><span class="visually-hidden">Плитка</span></button></li>
+              <li class="choose-icon"><button type="button" class="button-big-list"><span class="visually-hidden">Большой список</span></button></li>
+              <li class="choose-icon"><button type="button" class="button-small-list"><span class="visually-hidden">Маленький список</span></button></li>
             </ul>
           </div>
 
           <section class="product-cards" data-test="catalog">
             <div class="product-card">
-              <img class="product-card-image" width="300" height="212" src="img/hotel-photo-1.jpg"
-                alt="Amara Resort & Spa">
+              <img class="product-card-image" width="300px" height="212px" src="img/hotel-photo-1.jpg"
+                alt="Звёздное небо из пещеры">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
               <p class="product-card-description">Гостиница</p>
-              <b class="product-card-price">От 4000 ₽</b>
+              <p class="product-card-price">От 4000 ₽</p>
               <a class="product-card-button button-more" href="#">ПОДРОБНЕЕ</a>
               <button type="button" class="product-card-button button-like">В ИЗБРАННОЕ</button>
-              <span class="stars">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
+              <span class="stars-amara">
               </span>
               <p class="product-card-rate">РЕЙТИНГ: 8,5</p>
             </div>
 
             <div class="product-card">
               <img class="product-card-image" width="300" height="212" src="img/hotel-photo-2.jpg"
-                alt="Villas at Poco Diablo">
+                alt="Горы и радуга">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
               <p class="product-card-description">Гостиница</p>
-              <b class="product-card-price">От 5000 ₽</b>
+              <p class="product-card-price">От 5000 ₽</p>
               <a class="product-card-button button-more" href="#">ПОДРОБНЕЕ</a>
               <button type="button" class="product-card-button button-liked">В ИЗБРАННОМ</button>
-              <span class="stars">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
+              <span class="stars-villias">
               </span>
               <p class="product-card-rate">РЕЙТИНГ: 9,2</p>
             </div>
 
             <div class="product-card">
               <img class="product-card-image" width="300" height="212" src="img/hotel-photo-3.jpg"
-                alt="Desert Quail Inn">
+                alt="Гора днём">
               <h3 class="product-card-title">Desert Quail Inn</h3>
               <p class="product-card-description">Гостиница</p>
-              <b class="product-card-price">От 2500 ₽</b>
+              <p class="product-card-price">От 2500 ₽</p>
               <a class="product-card-button button-more" href="#">ПОДРОБНЕЕ</a>
               <button type="button" class="product-card-button button-like">В ИЗБРАННОЕ</button>
-              <span class="stars">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
+              <span class="stars-desert">
               </span>
               <p class="product-card-rate">РЕЙТИНГ: 6,9</p>
             </div>
 
             <div class="product-card">
-              <img class="product-card-image" width="300" height="212" src="img/hotel-photo-4.jpg" alt="GreenTree Inn">
+              <img class="product-card-image" width="300" height="212" src="img/hotel-photo-4.jpg" alt="Звёздное небо и гора">
               <h3 class="product-card-title">GreenTree Inn</h3>
               <p class="product-card-description">Гостиница</p>
-              <b class="product-card-price">От 1500 ₽</b>
+              <p class="product-card-price">От 1500 ₽</p>
               <a class="product-card-button button-more" href="#">ПОДРОБНЕЕ</a>
               <button type="button" class="product-card-button button-like">В ИЗБРАННОЕ</button>
-              <span class="stars">
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                </svg>
+              <span class="stars-greentree">
               </span>
               <p class="product-card-rate">РЕЙТИНГ: 5,0</p>
             </div>
           </section>
           <ul class="pages">
             <li>
-              <p class="page-active">1</p>
+              <a class="page-active" href="#">1</a>
             </li>
             <li>
-              <p class="page-item">2</p>
+              <a class="page-item" href="#">2</a>
             </li>
             <li>
-              <p class="page-item">3</p>
+              <a class="page-item" href="#">3</a>
             </li>
             <li>
-              <p class="page-item">4</p>
+              <a class="page-item" href="#">4</a>
             </li>
             <li>
-              <p class="page-miss">...</p>
+              <a class="page-miss" href="#">...</a>
             </li>
             <li>
-              <p class="page-item">10</p>
+              <a class="page-item" href="#">10</a>
             </li>
           </ul>
         </section>
-      </div>
 
         <section class="subscribe-catalog" data-test="subscribe">
           <div class="catalog-subscribe-block">

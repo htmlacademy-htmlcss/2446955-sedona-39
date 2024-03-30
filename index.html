@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="/favicon.png">
   </head>
 
   <body>
@@ -141,9 +141,9 @@
             <p class="subscribe-description subscribe-description-index">Только полезная информация и никакого
               спама,<br> честное бойскаутское!</p>
           </div>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="subscribe-form" action="#" method="post">
             <label class="visually-hidden" for="user-email">Ваш e-mail</label>
-            <input class="subscribe-mail" type="text" id="user-email" placeholder="Ваш e-mail">
+            <input class="subscribe-mail" type="email" id="user-email" placeholder="Ваш e-mail" required>
             <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
           </form>
         </section>
@@ -212,8 +212,7 @@
             </div>
             <div class="field-group">
               <label class="leaving" for="leaving">Дата Выезда:</label>
-              <input class="leaving-form" type="text" id="leaving" name="leaving-date"
-                placeholder="1 сентября 2023">
+              <input class="leaving-form" type="text" id="leaving" name="leaving-date" placeholder="1 сентября 2023">
               <span class="places">На эти даты есть свободные номера. Пока есть.</span>
             </div>
 
@@ -223,12 +222,14 @@
               </div>
               <div class="adults-button">
                 <button class="button-minus-a button-number" type="button">
+                  <span class="visually-hidden">Меньше</span>
                   <svg width="14" height="2" viewBox="0 0 14 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0v2h14V0H0Z" />
                   </svg>
                 </button>
                 <input class="adults-input" type="number" id="adults" name="number-adults" value="2">
                 <button class="button-plus-a button-number" type="button">
+                  <span class="visually-hidden">Больше</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
@@ -237,27 +238,31 @@
               </div>
             </div>
             <div class="children">
-              <label class="field-children" for="children">Дети:</label>
-              <div class="tooltip">
-                <button class="warning" type="button">
-                  <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" fill="#fff" />
-                  </svg>
-                </button>
-                <span class="warning-text">
-                  Укажите количество детей, <br> которые будут с вами, возраст <br> которых от 6 до 18 лет. Дети <br> до
-                  6 лет размещаются <br> бесплатно.
-                </span>
-              </div>
-
+              <span class="children-warning">
+                <label class="field-children" for="children">Дети:</label>
+                <div class="tooltip">
+                  <button class="warning" type="button">
+                    <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" fill="#fff" />
+                    </svg>
+                  </button>
+                  <span class="warning-text">
+                    Укажите количество детей, <br> которые будут с вами, возраст <br> которых от 6 до 18 лет. Дети <br>
+                    до
+                    6 лет размещаются <br> бесплатно.
+                  </span>
+                </div>
+              </span>
               <div class="children-button">
                 <button class="button-minus button-number" type="button">
+                  <span class="visually-hidden">Меньше</span>
                   <svg width="14" height="2" viewBox="0 0 14 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0v2h14V0H0Z" />
                   </svg>
                 </button>
                 <input class="children-input" type="number" id="children" name="number-children" value="2">
                 <button class="button-plus button-number" type="button">
+                  <span class="visually-hidden">Больше</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />

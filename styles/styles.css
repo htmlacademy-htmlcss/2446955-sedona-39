@@ -49,6 +49,10 @@ body {
   width: 100%;
 }
 
+.main{
+  flex: 1;
+}
+
 .page-header {
   width: 100%;
   padding: 0 60px 0 70px;
@@ -60,6 +64,14 @@ body {
   margin: 0;
   margin-bottom: -8px;
   display: block;
+}
+
+.page-header-logo:hover{
+  opacity: 0.7;
+}
+
+.page-header-logo:active{
+  opacity: 0.3;
 }
 
 .navigation-logo {
@@ -199,7 +211,7 @@ body {
   padding: 8px 34px;
   background-color: #756157;
   color: #FFFFFF;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -220,8 +232,8 @@ body {
 }
 
 .hero {
-  background-color: #FFFFFF;
-  background-image: url("../img/divider.svg"), url("../img/index-background.jpg");
+  background-color: rgba(131, 179, 211, 0.2);
+  background-image: url("../img/divider.png"), url("../img/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 1200px auto;
   background-position: bottom;
@@ -232,14 +244,10 @@ body {
   min-height: 485px;
 }
 
-.divider {
-  padding: 0;
-  margin: 0;
-}
-
 .hero-img {
   padding-top: 51px;
   margin: 0;
+  object-fit: cover;
 }
 
 .about {
@@ -395,7 +403,6 @@ body {
 .infrastructure {
   background-color: #FFFFFF;
   color: #000000;
-  height: 631px;
 }
 
 .infrastructure-lead {
@@ -431,8 +438,8 @@ body {
 
 .infrastructure-list {
   width: 1200px;
-  height: 385px;
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -446,7 +453,7 @@ body {
   text-align: center;
   list-style: none;
   margin: 0;
-  padding: 55px 85px;
+  padding: 55px 85px 81px 85px;
 }
 
 .infrastructure-title {
@@ -486,7 +493,7 @@ body {
   text-align: center;
   list-style: none;
   margin: 0;
-  padding: 55px 85px;
+  padding: 55px 85px 81px 85px;
 }
 
 .infrastructure-title-2::before {
@@ -514,7 +521,7 @@ body {
   text-align: center;
   list-style: none;
   margin: 0;
-  padding: 55px 85px;
+  padding: 55px 85px 81px 85px;
 }
 
 .infrastructure-title-3::before {
@@ -629,7 +636,7 @@ body {
 
 .button {
   width: 191px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -686,10 +693,10 @@ body {
   background-position: center;
   background-size: 1200px 412px;
   max-width: 100%;
-  min-height: 307px;
+  min-height: 412px;
   color: #FFFFFF;
   list-style: none;
-  padding: 35px 60px 70px 70px;
+  padding: 35px 60px 0 70px;
   box-sizing: border-box;
 }
 
@@ -868,6 +875,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+  font-family: "PT Sans";
   border: none;
   width: 143px;
   padding: 12px 20px;
@@ -936,7 +944,7 @@ body {
   align-items: center;
   width: 1060px;
   min-height: 49px;
-  padding: 50px 0 40px 70px;
+  padding: 50px 0 38px 70px;
   margin: 0;
 }
 
@@ -948,8 +956,8 @@ body {
   margin-right: auto;
 }
 
-option {
-  font-family: "PT Sans";
+.select-control-item{
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -957,13 +965,13 @@ option {
 
 .select-control {
   width: 292px;
-  height: 49px;
+  min-height: 46px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  font-family: "PT Sans";
-  padding: 14px 20px;
-  margin-right: 70px;
+  font-family: "PT Sans", sans-serif;
+  padding: 14px 40px 14px 16px;
+  margin-right: 72px;
   border: solid 2px #E5E5E5;
   border-radius: 4px;
   box-sizing: border-box;
@@ -972,6 +980,7 @@ option {
   background-repeat: no-repeat;
   background-position: center right 20px;
   cursor: pointer;
+  background-color: #FFFFFF;
 }
 
 .select-control:hover {
@@ -1071,7 +1080,7 @@ option {
 .product-card {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 212px minmax(28px, auto) 21px 36px 36px;
+  grid-template-rows: 212px minmax(28px, auto) minmax(21px, auto) minmax(36px, auto) 36px;
   border: 1px solid #E6E6E6;
   text-align: left;
   padding: 20px;
@@ -1083,6 +1092,8 @@ option {
   padding: 0;
   margin: 0;
   object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .product-card-title {
@@ -1099,6 +1110,13 @@ option {
 .product-card-button {
   margin: 0;
   padding: 0;
+}
+
+.product-card-description{
+  grid-column: 1/2;
+  font-size: 18px;
+  line-height: 21px;
+  max-width: 140px;
 }
 
 .product-card-rate,
@@ -1118,9 +1136,48 @@ option {
   font-weight: 400;
 }
 
-.stars {
-  align-items: center;
-  padding-top: 10px;
+.stars-amara {
+  background-image: url("../img/star.svg");
+  background-size: 20px 17px;
+  background-repeat: space;
+  align-self: center;
+  width: 90px;
+  height: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.stars-villias {
+  background-image: url("../img/star.svg");
+  background-size: 20px 17px;
+  background-repeat: space;
+  align-self: center;
+  width: 90px;
+  height: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.stars-desert{
+  background-image: url("../img/star.svg");
+  background-size: 20px 17px;
+  background-repeat: space;
+  align-self: center;
+  width: 66px;
+  height: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.stars-greentree {
+  background-image: url("../img/star.svg");
+  background-size: 20px 17px;
+  background-repeat: space;
+  align-self: center;
+  width: 42px;
+  height: 17px;
+  margin: 0;
+  padding: 0;
 }
 
 .product-card-button {
@@ -1136,6 +1193,8 @@ option {
 
 .product-card-price {
   text-align: right;
+  padding: 0;
+  margin: 0;
 }
 
 .button-more {
@@ -1144,7 +1203,7 @@ option {
   border-radius: 4px;
   text-decoration: none;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   font-weight: 700;
 }
 
@@ -1167,7 +1226,7 @@ option {
   border-radius: 4px;
   text-decoration: none;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -1191,7 +1250,7 @@ option {
   border-radius: 4px;
   text-decoration: none;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -1224,6 +1283,9 @@ option {
   gap: 8px;
   list-style: none;
   padding-left: 70px;
+  padding-top: 38px;
+  padding-bottom: 40px;
+  margin: 0;
 }
 
 .page-item {
@@ -1232,14 +1294,17 @@ option {
   line-height: 36px;
   background-color: #82B3D3;
   color: #FFFFFF;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   border-radius: 4px;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
+  text-overflow: clip;
 }
 
 .page-item:hover {
@@ -1255,20 +1320,26 @@ option {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.page-item:disabled{
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
+
 .page-active {
   background-color: #F2F2F2;
   color: #000000;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   border-radius: 4px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .page-active:hover {
@@ -1294,6 +1365,7 @@ option {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .search {
@@ -1365,7 +1437,7 @@ option {
   background-image: url("../img/subscribe-background.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #82B3D3;
+  background-color: rgba(131, 179, 211, 0.2);
   text-align: center;
   color: #FFFFFF;
   width: 1200px;
@@ -1381,7 +1453,7 @@ option {
 .subscribe-title {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1405,14 +1477,14 @@ option {
   display: flex;
   min-height: 52px;
   justify-content: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 .subscribe-mail {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1427,13 +1499,23 @@ option {
   min-height: 52px;
   margin-bottom: 104px;
   box-sizing: border-box;
+  text-align: left;
+}
+
+.subscribe-mail:hover{
+  background-color: #E6E6E6;
+}
+
+.subscribe-mail:focus{
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
 }
 
 .subscribe-button {
   background-color: #82B3D3;
   color: #FFFFFF;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -1458,12 +1540,6 @@ option {
 .subscribe-button:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
-}
-
-input {
-  padding: 0;
-  margin: 0;
-  text-align: left;
 }
 
 .page-footer {
@@ -1492,7 +1568,7 @@ input {
 }
 
 .footer-social-link:hover {
-  color: rgba(104, 162, 202, 1);
+  color: #68A2CA;
 }
 
 .footer-social-link:active {
@@ -1549,6 +1625,10 @@ input {
 
 .footer-link:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.footer{
+  flex-shrink: 0;
 }
 
 .modal-container {
@@ -1620,7 +1700,7 @@ input {
 
 .arrival,
 .leaving {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1632,6 +1712,7 @@ input {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  font-family: "PT Sans";
   border: 0;
   border-radius: 4px;
   min-height: 48px;
@@ -1715,7 +1796,7 @@ input {
 .children-input {
   background-color: #F2F2F2;
   border: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -1771,6 +1852,8 @@ input {
 .button-number {
   cursor: pointer;
   color: rgba(117, 97, 87, 0.3);
+  padding: 3px;
+  box-sizing: border-box;
 }
 
 .button-number:hover {
@@ -1779,6 +1862,10 @@ input {
 
 .button-number:active {
   color: rgba(0, 0, 0, 0.2);
+}
+
+.button-number:focus{
+  outline: 3px solid #82B3D3;
 }
 
 .children {
