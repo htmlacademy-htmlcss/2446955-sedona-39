@@ -141,9 +141,9 @@
             <p class="subscribe-description subscribe-description-index">Только полезная информация и никакого
               спама,<br> честное бойскаутское!</p>
           </div>
-          <form class="subscribe-form" action="#" method="post">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="user-email">Ваш e-mail</label>
-            <input class="subscribe-mail" type="email" id="user-email" placeholder="Ваш e-mail" required>
+            <input class="subscribe-mail" type="email" name="subscribe-letter" id="user-email" placeholder="Ваш e-mail" required>
             <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
           </form>
         </section>
@@ -238,21 +238,21 @@
               </div>
             </div>
             <div class="children">
-              <span class="children-warning">
+              <div class="children-warning">
                 <label class="field-children" for="children">Дети:</label>
                 <div class="tooltip">
-                  <button class="warning" type="button">
+                  <button class="warning" type="button" aria-labelledby="warning-children-age">
                     <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" fill="#fff" />
                     </svg>
                   </button>
-                  <span class="warning-text">
+                  <span class="warning-text" id="warning-children-age">
                     Укажите количество детей, <br> которые будут с вами, возраст <br> которых от 6 до 18 лет. Дети <br>
                     до
                     6 лет размещаются <br> бесплатно.
                   </span>
                 </div>
-              </span>
+              </div>
               <div class="children-button">
                 <button class="button-minus button-number" type="button">
                   <span class="visually-hidden">Меньше</span>
