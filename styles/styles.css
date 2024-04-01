@@ -892,7 +892,7 @@ footer {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   border: none;
   width: 143px;
   padding: 12px 20px;
@@ -1743,7 +1743,7 @@ footer{
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  font-family: "pt sans";
+  font-family: "pt sans", sans-serif;
   border: 0;
   border-radius: 4px;
   min-height: 48px;
